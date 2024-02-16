@@ -1,0 +1,35 @@
+=======================================DOCUMENTACION==============================================
+
+----------------------------------NOMBRE DE LA BASE DE DATOS-------------------------------------- 
+
+"pruebita"
+
+-----------------------------------TABLA DE LA BASE DE DATOS-------------------------------------- 
+
+CREATE TABLE inventario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    cantidad INT,
+    precio DECIMAL(10,2),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-------------------------------------------PAGINAS-----------------------------------------------
+
+-index.php = Pagina principal en donde se puede visualizar los productos existentes ademas de poder agregar nuevo o descontar cantidad de producto, tambien cada producto tienen dos botones, uno de ellos para eliminar el producto y otro para modificar el producto
+
+-agregar.php = Pagina en donde  se  puede visualizar el formulario para agregar nuevo producto.
+
+-agregar_logica.php = Parte logica de "agregar.php"
+
+-descontar.php = Pagina en donde  se  puede visualizar el formulario para descontar cantidad de producto.
+
+-descontar_logica.php = Parte logica de "quitar.php".
+
+-modificar.php = Pagina en donde  se  puede modificar el producto a travez de un formulario.
+
+-modificar_logica.php = Parte logica de "modificar.php".
+
+-eliminar = Pagina que lleva la logica del boton de cada producto para eliminarlos.
+
